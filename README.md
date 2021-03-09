@@ -12,4 +12,4 @@ Just looking for functionality, no styling.
 - [ ] Read answers and compare whether they are right.
 - [ ] Generate random numbers & Equations.
 - [ ] Get the basic layout working.
-- [ ] Set up application and split tasks.
+- [x] Set up application and split tasks.
