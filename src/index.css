@@ -9,4 +9,18 @@ body {
   max-width: 1000px;
   margin: 20px auto;
   background-color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-value {
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.form-submit {
+  padding: 10px;
 }

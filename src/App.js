@@ -1,7 +1,11 @@
+import Equation from "./components/Equation";
+import Input from "./components/Input";
+
 function App() {
   return (
     <div className="App">
-      <p>Barebones Setup</p>
+      <Equation />
+      <Input />
     </div>
   );
 }
