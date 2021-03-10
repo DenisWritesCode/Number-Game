@@ -1,5 +1,7 @@
 import React from 'react';
 
+// Receives equation from App and displays it.
+
 function Equation({ changeEquation }) {
   return (
     <div>

@@ -1,5 +1,7 @@
 import { useState } from 'react';
 
+// Get input and value and return it to App.
+
 function Input() {
 
   const [answer, setAnswer] = useState("");
