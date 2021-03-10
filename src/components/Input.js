@@ -1,10 +1,24 @@
-import React from "react";
+import { useState } from 'react';
 
 function Input() {
+
+  const [answer, setAnswer] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(answer);
+  };
+
   return (
     <div>
-      <form action="#" onSubmit="handleSubmit" className="form">
-        <input type="text" value="Enter answer Here" className="form-value" />
+      <form action="#" onSubmit={handleSubmit} id="form">
+        <input
+          type="text"
+          placeholder="Input Goes Here"
+          className="form-value"
+          value={answer}
+          onChange={e => setAnswer(e.target.value)}
+        />
         <input type="submit" value="Check Answer" className="form-submit" />
       </form>
       <p>

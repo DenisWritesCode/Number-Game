@@ -11,5 +11,5 @@ Just looking for functionality, no styling.
 - [ ] Announce to player the outcome of their result.
 - [ ] Read answers and compare whether they are right.
 - [ ] Generate random numbers & Equations.
-- [ ] Get the basic layout working.
+- [x] Get the basic layout working.
 - [x] Set up application and split tasks.
