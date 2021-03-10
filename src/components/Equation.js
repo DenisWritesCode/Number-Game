@@ -1,8 +1,7 @@
 import React from 'react';
-// Should generate the equation. 
-// Or maybe App should do it for us and then we can pass it down as prop since we need the answer
-// to that equation in Input.
-// Or maybe I will end up creating a third component.
+
+// Receives equation from App and displays it.
+
 function Equation({ changeEquation }) {
   return (
     <div>
