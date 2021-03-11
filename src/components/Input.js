@@ -6,26 +6,25 @@ function Input({ handleAnswer }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(answer);
     handleAnswer(answer);
     setAnswer('');
   };
 
   return (
     <div>
-      <form action="#" onSubmit={handleSubmit} id="form">
+      <form action='#' onSubmit={handleSubmit} id='form'>
         <input
-          type="text"
-          placeholder="Input Goes Here"
-          className="form-value"
+          type='text'
+          placeholder='Input Goes Here'
+          className='form-value'
           value={answer}
           onChange={(e) => setAnswer(e.target.value)}
         />
-        <input type="submit" value="Check Answer" className="form-submit" />
+        <input type='submit' value='Check Answer' className='form-submit'/>
       </form>
       <p>
-        You have <span className="rightAnswers">10</span> correct answers to go
-        and <span className="wrongAnswers">3</span> wrong ones to make before
+        You have <span className='rightAnswers'>10</span> correct answers to go
+        and <span className='wrongAnswers'>3</span> wrong ones to make before
         the game ends.
       </p>
     </div>
