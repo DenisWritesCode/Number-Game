@@ -1,5 +1,5 @@
 // Get input and value and return it to App.
-import {useState} from 'react';
+import { useState } from 'react';
 
 function Input({ handleAnswer }) {
   const [answer, setAnswer] = useState('');
@@ -9,7 +9,7 @@ function Input({ handleAnswer }) {
     console.log(answer);
     handleAnswer(answer);
     setAnswer('');
-  }
+  };
 
   return (
     <div>
