@@ -5,11 +5,15 @@ import Input from "./components/Input";
 // If answer correct, increase state if wrong, pass bad value.
 
 function App() {
+
+  const handleAnswer = (answer) => {
+    console.log("App.js called", answer);
+  };
   
   return (
     <div className="App">
       <Equation />
-      <Input />
+      <Input handleAnswer={handleAnswer} />
     </div>
   );
 }
