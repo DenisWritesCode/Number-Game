@@ -1,15 +1,15 @@
-import { useState } from 'react';
-
 // Get input and value and return it to App.
+import {useState} from 'react';
 
-function Input() {
-
-  const [answer, setAnswer] = useState("");
+function Input({ handleAnswer }) {
+  const [answer, setAnswer] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(answer);
-  };
+    handleAnswer(answer);
+    setAnswer('');
+  }
 
   return (
     <div>
@@ -19,7 +19,7 @@ function Input() {
           placeholder="Input Goes Here"
           className="form-value"
           value={answer}
-          onChange={e => setAnswer(e.target.value)}
+          onChange={(e) => setAnswer(e.target.value)}
         />
         <input type="submit" value="Check Answer" className="form-submit" />
       </form>
