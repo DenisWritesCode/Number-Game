@@ -6,28 +6,44 @@ import Input from './components/Input';
 
 function App() {
 
-  const handleAnswer = (answer) => {
-    if (answer === equation.answer) {
-      alert("Jinias");
-    } else {
-      alert("More Practice for ya");
-    }
-  };
-
+  
   const makeQuestion = () => {
     const firstNumber = Math.floor(Math.random() * 11); // 11 because we will floor it and we want to include 10.
     const lastNumber = Math.floor(Math.random() * 11); // 11 because we will floor it and we want to include 10.
-    const answer = firstNumber * lastNumber;
-    console.log("Answer: ",answer);
+    const operator = ['+', '*', '-'][Math.floor(Math.random() * 3)]; //Pick a random operator from the array of signs
+    let answer = 0;
+    switch (operator) {
+      case "+":
+        answer = firstNumber + lastNumber;
+        break;
+      case "*":
+        answer = firstNumber * lastNumber;
+        break;
+      case "-":
+        answer = firstNumber - lastNumber;
+        break;
+      default:
+        break;
+    }
     const numbers = {
       firstNumber,
       lastNumber,
+      operator,
       answer
     };
     return numbers;
   }
+  
   const equation = makeQuestion();
   
+  const handleAnswer = (answer) => {
+    if (equation.answer === parseInt(answer)) {
+      alert("Jinias");
+    } else {
+      //alert("More Practice for ya");
+    }
+  };
+
   return (
     <div className='App'>
       <Equation equation={equation}/>

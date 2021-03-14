@@ -4,7 +4,7 @@ function Equation({ equation }) {
 
   return (
     <div>
-      <p className='equation'>{equation.firstNumber} x {equation.lastNumber} </p>
+      <p className='equation'>{equation.firstNumber} {equation.operator} {equation.lastNumber} = {equation.answer} </p>
     </div>
   )
 }
