@@ -5,12 +5,12 @@ import Input from './components/Input';
 // If answer correct, increase state if wrong, pass bad value.
 
 function App() {
-
   
   const makeQuestion = () => {
     const firstNumber = Math.floor(Math.random() * 11); // 11 because we will floor it and we want to include 10.
     const lastNumber = Math.floor(Math.random() * 11); // 11 because we will floor it and we want to include 10.
     const operator = ['+', '*', '-'][Math.floor(Math.random() * 3)]; //Pick a random operator from the array of signs
+
     let answer = 0;
     switch (operator) {
       case "+":
@@ -25,12 +25,14 @@ function App() {
       default:
         break;
     }
+
     const numbers = {
       firstNumber,
       lastNumber,
       operator,
       answer
     };
+    
     return numbers;
   }
   
@@ -38,9 +40,9 @@ function App() {
   
   const handleAnswer = (answer) => {
     if (equation.answer === parseInt(answer)) {
-      alert("Jinias");
+      console.log("Jinias");
     } else {
-      //alert("More Practice for ya");
+      console.log("More Practice for ya");
     }
   };
 
