@@ -6,9 +6,9 @@ Just looking for functionality, no styling.
 - [ ] Full screen on game end.
 - [ ] Modal to show progress.
 - [ ] Style Components.
-- [ ] Reset Game
-- [ ] Add logic. 10 plays and at most 3 mistakes before game ends.
-- [ ] Announce to player the outcome of their result.
+- [x] Reset Game
+- [x] Announce to player the outcome of their result.
+- [x] Add logic. 10 plays and at most 3 mistakes before game ends.
 - [x] Read answers and compare whether they are right.
 - [x] Generate random numbers & Equations.
 - [x] Get the basic layout working.
